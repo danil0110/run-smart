@@ -8,7 +8,84 @@
   .container {
     max-width: 540px;
   }
+
+  .button {
+    width: 130px;
+    height: 25px;
+    font-size: 10px;
+
+    &_main {
+      width: 300px;
+      height: 50px;
+      font-size: 16px;
+    }
+  }
+
+  .promo {
+    .header {
+      &__logo {
+        width: 170px;
+      }
+
+      &__official {
+        font-size: 10px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+      &__phone {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
+  .container {
+    max-width: none;
+  }
+
+  .button {
+    &_main {
+      margin-top: 50px;
+    }
+  }
+
+  .promo {
+    min-height: 500px;
+    padding: 21px 0 60px;
+
+    .header {
+      &__official {
+        display: none;
+      }
+    }
+
+    &__header {
+      text-align: center;
+      font-size: 36px;
+    }
+
+    &__subheader {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__wrapper {
+      margin-top: 60px;
+      align-items: center;
+    }
+
+    &__icons {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    &__icon {
+      width: 100px;
+      font-size: 12px;
+    }
+  }
 }
