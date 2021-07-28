@@ -3,8 +3,9 @@
 }
 
 .container {
-  max-width: 950px;
+  max-width: 990px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @import './base/variables';
@@ -12,3 +13,6 @@
 @import './blocks/promo';
 @import './blocks/header';
 @import './blocks/buttons';
+@import './blocks/section-header';
+@import './blocks/advantages';
+@import './media';
