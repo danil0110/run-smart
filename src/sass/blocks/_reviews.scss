@@ -47,5 +47,11 @@
         }
       }
     }
+
+    &__header {
+      display: none;
+      align-items: center;
+      gap: 15px;
+    }
   }
 }

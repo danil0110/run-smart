@@ -94,6 +94,17 @@
       align-items: center;
     }
   }
+
+  .reviews {
+    .review {
+      gap: 30px;
+
+      &__avatar {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -185,6 +196,8 @@
   }
 
   .catalog {
+    padding-bottom: 70px;
+
     &__tabs {
       margin-top: 40px;
       gap: 5px;
@@ -198,6 +211,42 @@
 
     &__content {
       margin-top: 30px;
+    }
+  }
+
+  .reviews {
+    &__wrapper {
+      margin-top: 40px;
+    }
+
+    .review {
+      flex-direction: column;
+      gap: 15px;
+
+      &__avatar {
+        width: 70px;
+        height: 70px;
+      }
+
+      &__avatar,
+      &__author,
+      &__stats {
+        display: none;
+      }
+
+      &__header {
+        display: flex;
+
+        .review__avatar,
+        .review__author,
+        .review__stats {
+          display: block;
+        }
+
+        .review__stats {
+          display: block;
+        }
+      }
     }
   }
 }
