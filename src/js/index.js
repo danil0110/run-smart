@@ -4,12 +4,12 @@ $(document).ready(function () {
         // adaptiveHeight: true,
         prevArrow: `
             <button type="button" class="slick-prev">
-                <img src="../icons/slider/btn-left.png">
+                <img src="./icons/slider/btn-left.png">
             </button>
         `,
         nextArrow: `
             <button type="button" class="slick-next">
-                <img src="../icons/slider/btn-right.png">
+                <img src="./icons/slider/btn-right.png">
             </button>
         `,
         responsive: [
