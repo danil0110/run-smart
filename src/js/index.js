@@ -115,4 +115,6 @@ $(document).ready(function () {
             $('.scroll-up').fadeOut();
         }
     });
+
+    new WOW().init();
 });
