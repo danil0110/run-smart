@@ -144,6 +144,10 @@
 
   .feed-form {
     width: 250px;
+
+    &_mt25 {
+      width: 100%;
+    }
   }
 
   .promo {
@@ -304,6 +308,15 @@
       img {
         height: 18px;
       }
+    }
+  }
+
+  .modal {
+    width: 325px;
+
+    &__close {
+      top: 10px;
+      right: 10px;
     }
   }
 }
