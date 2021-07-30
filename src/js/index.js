@@ -67,4 +67,29 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn();
         });
     });
+
+    function validateForm(form) {
+        $(form).validate({
+            rules: {
+                name: 'required',
+                phone: 'required',
+                email: {
+                    required: true,
+                    email: true,
+                },
+            },
+            messages: {
+                name: 'Пожалуйста, введите свое имя',
+                phone: 'Пожалуйста, введите свой номер телефона',
+                email: {
+                    required: 'Пожалуйста, введите свой E-mail',
+                    email: 'Некорректный E-mail',
+                },
+            },
+        });
+    }
+
+    validateForm('#consultation-form');
+    validateForm('#consultation .feed-form');
+    validateForm('#order .feed-form');
 });
