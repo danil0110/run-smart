@@ -94,4 +94,15 @@ $(document).ready(function () {
     validateForm('#order .feed-form');
 
     $('input[name=phone]').mask('+7 (999) 999-99-99');
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        $(this).find('input').val('');
+        $('form').trigger('reset');
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn();
+
+        return false;
+    })
 });
