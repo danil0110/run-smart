@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $('.slider__inner').slick({
         speed: 500,
-        // adaptiveHeight: true,
         prevArrow: `
             <button type="button" class="slick-prev">
                 <img src="./icons/slider/btn-left.png">
@@ -43,7 +42,7 @@ $(document).ready(function () {
             $(this).on('click', function (e) {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-                $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+                $('.catalog-item__details').eq(i).toggleClass('catalog-item__details_active');
             });
         });
     }
