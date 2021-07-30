@@ -8,6 +8,16 @@
       width: 200px;
     }
   }
+
+  .slider {
+    &__inner {
+      width: 500px;
+
+      img {
+        width: 500px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -192,6 +202,16 @@
       font-size: 18px;
       line-height: 26px;
       text-align: center;
+    }
+  }
+
+  .slider {
+    &__inner {
+      width: 300px;
+
+      img {
+        width: 300px;
+      }
     }
   }
 
